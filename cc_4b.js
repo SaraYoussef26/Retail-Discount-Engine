@@ -22,19 +22,8 @@ for (const product of products) {
             discount = .2
             break;
         case "apparel":
-            discount = 1.5
+            discount = .15
     }
     let promoPrice = product.price * (1-discount);
 
 }
-
-//Step 4 Customer Type Adjustment
-
-let customers = [
-{ id: 1, customerType: "regular", couponCode:"SAVE10", taxRate: 0,
-    cart: [{ sku: "A-100", qty: 2 }, { sku: "C-300", qty: 3}] },
-{ id: 2, customerType: "student", couponCode:"FREESHIP", taxRate: 0.5,
-    cart: [{ sku: "E-200", qty: 2 }, { sku: "B-400", qty: 3}] },
-{ id: 3, customerType: "senior", couponCode:"", taxRate: 0.7,
-    cart: [{ sku: "G-500", qty: 5 }, { sku: "C-300", qty: 6}] },
-];
